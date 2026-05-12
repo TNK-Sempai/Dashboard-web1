@@ -285,7 +285,7 @@
 
     .fadeIn(500)
 
-    .addClass("");
+    .addClass("activePage");
 
 });
 
@@ -294,11 +294,11 @@
    TOGGLE MENU
 ========================= */
 
-$("").click(function(){
+$("#toggleMenu").click(function(){
 
-    $("").animate({
+    $(".sidebar").animate({
 
-        width:""
+        width:"toggle"
 
     },500);
 
@@ -311,7 +311,7 @@ $("").click(function(){
 
 $(".counter").each(function(){
 
-    let target = $(this).data("");
+    let target = $(this).data("target");
 
     let counter = $(this);
 
@@ -354,36 +354,36 @@ $(".counter").each(function(){
 
 setInterval(function(){
 
-    $("")
+    $(".c1")
 
     .animate({
-        top:""
+        top:"70px"
     },1000)
 
     .animate({
-        top:""
+        top:"30px"
     },1000);
 
 
     $(".c2")
 
     .animate({
-        right:""
+        right:"100px"
     },1000)
 
     .animate({
-        right:""
+        right:"260px"
     },1000);
 
 
     $(".c3")
 
     .animate({
-        left:""
+        left:"120px"
     },1000)
 
     .animate({
-        left:""
+        left:"40px"
     },1000);
 
 },2000);
@@ -490,7 +490,7 @@ setInterval(function(){
                 $('#message').removeAttr('disabled');
             });
         });
-        
+
 </script>
 
 </body>
